@@ -81,9 +81,6 @@ public class TopLevelActivity extends Activity {
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-                CountryDto countryData = null;
-
                 Intent intent  = new Intent(TopLevelActivity.this, CountryActivity.class);
                 intent.putExtra("countryData", countryDtoList.get(i));
                 startActivity(intent);
